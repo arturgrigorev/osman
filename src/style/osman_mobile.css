@@ -1,0 +1,206 @@
+/**
+ * Osman - Mobile styles
+ *
+ * Responsive overrides for mobile devices.
+ */
+
+@media (max-width: 768px) {
+    /* ==================== Controls ==================== */
+
+    .um-control-container {
+        margin: 5px;
+    }
+
+    .um-top_left,
+    .um-top_right {
+        top: 5px;
+    }
+
+    .um-bottom_left,
+    .um-bottom_right {
+        bottom: 60px;  /* Space for bottom controls */
+    }
+
+    .um-control {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    /* ==================== Zoom Control ==================== */
+
+    .um-zoom-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+
+    /* ==================== Legend ==================== */
+
+    .um-legend {
+        max-height: 40vh;
+        max-width: 180px;
+    }
+
+    .um-legend-title {
+        font-size: 14px;
+    }
+
+    .um-legend-item {
+        padding: 6px 0;
+    }
+
+    .um-legend-label {
+        font-size: 13px;
+    }
+
+    .um-legend-checkbox {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* ==================== Layer Switcher ==================== */
+
+    .um-layer-switcher {
+        padding: 10px;
+    }
+
+    .um-layer-option {
+        padding: 8px;
+        min-height: 44px;
+    }
+
+    /* ==================== Popups ==================== */
+
+    .um-popup {
+        max-width: 85vw;
+    }
+
+    .um-popup-content {
+        padding: 14px 16px;
+        font-size: 14px;
+    }
+
+    .um-popup-close {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    /* ==================== Tooltips ==================== */
+
+    .um-tooltip {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    /* ==================== Attribution ==================== */
+
+    .um-attribution {
+        font-size: 9px;
+        padding: 2px 6px;
+        max-width: 60vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* ==================== Markers ==================== */
+
+    .um-marker {
+        /* Larger touch targets */
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* ==================== Tools ==================== */
+
+    .um-measure-label {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .um-draw-vertex {
+        width: 14px;
+        height: 14px;
+        margin: -7px 0 0 -7px;
+    }
+
+    /* ==================== Scale Bar ==================== */
+
+    .um-scale-bar {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+}
+
+/* ==================== Very small screens ==================== */
+
+@media (max-width: 480px) {
+    .um-legend {
+        max-width: 150px;
+        max-height: 35vh;
+    }
+
+    .um-popup {
+        max-width: 90vw;
+        min-width: 150px;
+    }
+
+    .um-control-container {
+        margin: 3px;
+    }
+}
+
+/* ==================== Landscape mobile ==================== */
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .um-bottom_left,
+    .um-bottom_right {
+        bottom: 40px;
+    }
+
+    .um-legend {
+        max-height: 50vh;
+    }
+}
+
+/* ==================== Touch optimizations ==================== */
+
+@media (pointer: coarse) {
+    /* Larger touch targets for all interactive elements */
+    .um-zoom-btn,
+    .um-layer-option,
+    .um-legend-item {
+        min-height: 44px;
+    }
+
+    /* Disable hover effects on touch devices */
+    .um-zoom-btn:hover,
+    .um-layer-option:hover,
+    .um-legend-item:hover {
+        background-color: inherit;
+    }
+
+    .um-zoom-btn:active {
+        background-color: #eee;
+    }
+
+    .um-layer-option:active,
+    .um-legend-item:active {
+        background-color: #f0f0f0;
+    }
+}
+
+/* ==================== High DPI screens ==================== */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .um-control {
+        border-radius: 5px;
+    }
+
+    .um-popup {
+        border-radius: 8px;
+    }
+}

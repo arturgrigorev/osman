@@ -1,0 +1,23 @@
+{
+  "baseDir": "dist",
+  "defaultCompression": "gzip",
+  "files": [
+    {
+      "maxSize": "40kB",
+      "path": "osman.js"
+    }, {
+      "maxSize": "3.2kB",
+      "path": "osman.css"
+    }
+  ],
+  "reportOutput": [
+    [
+      "github",
+      {
+        "checkRun": true,
+        "commitStatus": false,
+        "prComment": false
+      }
+    ]
+  ]
+}
